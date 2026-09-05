@@ -8,6 +8,7 @@ body {
     font-family: sans-serif;
     background-color: #f5f5f5;
 }
+
 .navbar {
     background-color: #111;
     color: #fff;
@@ -19,6 +20,7 @@ body {
     left: 0;
     z-index: 1000;
 }
+
 .header-space {
     height: 60px;
 }
@@ -28,6 +30,7 @@ body {
     padding: 3rem 1rem;
     text-align: center;
 }
+
 .aviso-sticky {
     background-color: #ff0;
     color: #000;
