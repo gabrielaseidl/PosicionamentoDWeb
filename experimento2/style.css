@@ -1,0 +1,11 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.aviso-sticky {
+    position: sticky;
+    top: 60px;
+    z-index: 900;
+}
