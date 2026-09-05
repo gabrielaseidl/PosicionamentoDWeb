@@ -1,12 +1,66 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experimento - Fixed e Sticky</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* EXERCÍCIO A: Navbar fixa no topo da janela */
+        .navbar {
+            background-color: #111;
+            color: #fff;
+            padding: 1rem;
+            width: 100%;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header-space {
+            /* Espaçamento para o conteúdo não ficar escondido atrás da navbar */
+            height: 60px;
+        }
+
+        .hero {
+            background-color: #ddd;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        /* EXERCÍCIO B: Barra de aviso grudada abaixo da Navbar */
+        .aviso-sticky {
+            background-color: #ff0;
+            color: #000;
+            padding: 0.8rem;
+            text-align: center;
+            font-weight: bold;
+
+            position: sticky;
+            top: 60px;
+            z-index: 999;
+        }
+
+        .conteudo {
+            height: 200vh;
+            /* Altura grande para permitir rolagem da página */
+            padding: 2rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,3 +88,4 @@
 </body>
 
 </html>
+```
